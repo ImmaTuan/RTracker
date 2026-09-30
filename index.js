@@ -1,9 +1,9 @@
 const axios = require('axios');
 
 // CONFIGURE YOUR DATA HERE
-const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1376857818602409994/eWMsKX8GHwl1Awrdm-oFjmbIctkp0UJTBvSYgel4IzgHiLq7AFsNLWlq_-oLwxe1uFmL';
-const ROBLOX_USER_ID = 1681116715; // Roblox User ID
-const DISCORD_USER_ID = '370086748891643905'; // Điền ID Discord của bạn (để trống '' nếu muốn ping @everyone)
+const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
+const ROBLOX_USER_ID = process.env.ROBLOX_USER_ID;
+const DISCORD_USER_ID = process.env.DISCORD_USER_ID;
 const CHECK_INTERVAL = 15000; 
 
 // Danh sách các Place ID cần theo dõi
