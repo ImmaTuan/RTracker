@@ -1,3 +1,17 @@
+const http = require('http');
+
+// Tạo một HTTP Server giả để "lừa" Render Web Service quét thấy Port
+const PORT = process.env.PORT || 3000;
+http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('Roblox Tracker Bot is running!\n');
+}).listen(PORT, () => {
+    console.log(`Web server listening on port ${PORT}`);
+});
+
+// --- DƯỚI NÀY LÀ MÃ NGUỒN INDEX.JS CŨ CỦA BẠN ---
+const axios = require('axios');
+// ... giữ nguyên toàn bộ code cũ bên dưới ...
 const axios = require('axios');
 
 // CONFIGURE YOUR DATA HERE
