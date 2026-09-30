@@ -1,4 +1,5 @@
 const http = require('http');
+const axios = require('axios');
 
 // Tạo một HTTP Server giả để "lừa" Render Web Service quét thấy Port
 const PORT = process.env.PORT || 3000;
@@ -9,10 +10,7 @@ http.createServer((req, res) => {
     console.log(`Web server listening on port ${PORT}`);
 });
 
-// --- DƯỚI NÀY LÀ MÃ NGUỒN INDEX.JS CŨ CỦA BẠN ---
-const axios = require('axios');
 // ... giữ nguyên toàn bộ code cũ bên dưới ...
-const axios = require('axios');
 
 // CONFIGURE YOUR DATA HERE
 const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
